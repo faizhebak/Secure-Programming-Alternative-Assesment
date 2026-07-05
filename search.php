@@ -5,7 +5,6 @@ require_once 'db_config.php';
 $keyword = $_GET['keyword'];
 
 // Hidden Flaw A: SQL Injection via raw string concatenation
-// Note: DB Connection is inadvertently running under high-privilege root access
 $sql = "SELECT id, name, illness_history FROM patient_records WHERE name LIKE '%" . $keyword . "%'";
 $result = $conn->query($sql);
 

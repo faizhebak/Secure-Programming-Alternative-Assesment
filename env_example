@@ -1,0 +1,7 @@
+# .env
+# This file is never committed to version control. See .gitignore.
+VAULT_KEY=base64:REPLACE_WITH_A_REAL_32_BYTE_KEY_ENCODED_IN_BASE64
+DB_HOST=127.0.0.1
+DB_NAME=medic_vault_db
+DB_USER=app_user_least_privilege
+DB_PASS=REPLACE_WITH_REAL_DB_PASSWORD
